@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:background="@drawable/background">
+
+	!--
+	Toolbar
+	!--
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/toolbar_color"
+		android:elevation="@dimen/toolbar_elevation">
+
+		<include
+			layout="@layout/menu_layout"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_above="@+id/mainGridView"/>
+
+	</androidx.appcompat.widget.Toolbar>
+
+	!--
+	error layout
+	!--
+	<RelativeLayout
+		android:id="@+id/error_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"
+		android:layout_below="@+id/toolbar">
+	<include
+		layout="@layout/error"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</include>
+</RelativeLayout>
+
+	!--
+	Swipe To Refresh
+	!--
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+	android:id="@+id/refresh"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_below="@+id/toolbar"
+	>
+
+	!--
+
+	GridView For Home Page
+
+	!--
+
+	<GridView
+		android:id="@+id/mainGridView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:numColumns="auto_fit"
+		android:verticalSpacing="@dimen/vertical_spacing"
+		android:horizontalSpacing="@dimen/horizontal_spacing"
+        android:paddingStart="@dimen/padding_start"
+		android:paddingTop="@dimen/padding_top"
+		android:paddingBottom="@dimen/padding_bottom"
+		android:smoothScrollbar="true"
+		android:stretchMode="columnWidth"
+		android:paddingLeft="@dimen/padding_left">
+
+	</GridView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>
+

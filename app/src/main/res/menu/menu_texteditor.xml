@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/show_font"
+        android:icon="@drawable/ic_font_download_black_24dp"
+        android:title="Font">
+
+    </item>
+    <item
+        android:id="@+id/boldtext"
+        android:icon="@drawable/ic_format_bold_black_24dp"
+        android:title="Bold"
+        app:showAsAction="ifRoom">
+
+    </item>
+    <item
+        android:id="@+id/italictexr"
+        android:icon="@drawable/ic_format_italic_black_24dp"
+        android:title="Italic"
+        app:showAsAction="ifRoom">
+
+    </item>
+    <item
+        android:id="@+id/colortext"
+        android:icon="@drawable/ic_color_lens_black_24dp"
+        android:title="color"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LogoMakerbeta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="message_zero_downloads">NO DOWNLOADS</string>
+    <string name="key_data">collection</string>
+    <string name="ket_frame">Frame</string>
+    <string name="progress_messages">Loading</string>
+    <string name="progress_message_downloading">Downloading Logo</string>
+    <string name="type_intent_text">text/*</string>
+    <string name="type_intent_image">image/*</string>
+    <string name="share_text">App Description</string>
+    <string name="file_chooser_title">Share The App</string>
+    <string name="admob_ad_id">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="admob_ad_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="offline_value">downloaded</string>
+    <string name="offline_key">offline_key</string>
+    <string name="app_directory">/LogoMaker</string>
+    <string name="frame_directory">/LogoMaker/Frame/</string>
+    <string name="child_key">child_name</string>
+    <string name="filename_key">filename</string>
+    <array name="name_fonts" translatable="false">
+        <item>Abel</item>
+        <item>Abhaya Libre</item>
+        <item>Aldrich</item>
+        <item>Amita</item>
+        <item>Anton</item>
+        <item>Architects Daughter</item>
+        <item>Bangers</item>
+        <item>Bungee</item>
+        <item>Great Vibes</item>
+        <item>Leckerli One</item>
+    </array>
+<string name="path">QueerStreet.ttf</string>
+    <string name="app_id">5e04da4c70dc630d413984ec</string>
+    <string name="signature">cd4e358b469316db7281ce8e1625872e3413ac2d</string>
+
+</resources>

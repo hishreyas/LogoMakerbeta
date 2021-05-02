@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbaar_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"
+        android:elevation="@dimen/toolbar_elevation">
+
+        <include
+            layout="@layout/menu_images"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/imgGridView"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/errorimg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbaar_img"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_downloads_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbaar_img"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/no_downloads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </include>
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/imgrefersh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbaar_img"
+        >
+
+    <GridView
+        android:id="@+id/imgGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="@dimen/vertical_spacing"
+        android:horizontalSpacing="@dimen/horizontal_spacing"
+        android:paddingStart="@dimen/padding_start"
+        android:paddingTop="@dimen/padding_top"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:paddingLeft="@dimen/padding_left"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
+

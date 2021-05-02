@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.sanedroid.logomakerbeta"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.google.firebase:firebase-storage:19.0.1'
+    implementation 'com.google.firebase:firebase-auth:19.1.0'
+    // FirebaseUI Storage only
+    implementation 'com.firebaseui:firebase-ui-storage:4.3.1'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+    implementation 'com.jaredrummler:colorpicker:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:+'
+    implementation 'com.google.android.gms:play-services-base:17.1.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    compile project(path: ':mysticker')
+}

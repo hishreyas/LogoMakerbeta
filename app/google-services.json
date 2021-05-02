@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1084813335135",
+    "firebase_url": "https://logomakerbeta.firebaseio.com",
+    "project_id": "logomakerbeta",
+    "storage_bucket": "logomakerbeta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084813335135:android:b2b414fcae39920b6559ea",
+        "android_client_info": {
+          "package_name": "com.sanedroid.logomakerbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084813335135-eokapko51egpur5c67gtdabqm8lh11np.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sanedroid.logomakerbeta",
+            "certificate_hash": "866a53eb5b1c2b04de0a5ef00a79acf68785fd9f"
+          }
+        },
+        {
+          "client_id": "1084813335135-jnkdl90u7isn92s3s3nj5n18p6t4e25d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUV8EejaGSe0WEYh2y8UKEpTUXyo-YfY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084813335135-jnkdl90u7isn92s3s3nj5n18p6t4e25d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

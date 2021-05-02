@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/show_logo"
+    android:icon="@drawable/ic_pie_chart_black_24dp"
+    android:title="Logo">
+
+</item>
+    <item
+        android:id="@+id/add_img"
+        android:icon="@drawable/ic_filter_frames_black_24dp"
+        android:title="Frame"
+        app:showAsAction="ifRoom">
+
+    </item>
+    <item
+        android:id="@+id/add_cplor"
+        android:icon="@drawable/ic_format_color_fill_black_24dp"
+        android:title="Color"
+        app:showAsAction="ifRoom">
+
+    </item>
+    <item
+        android:id="@+id/add_text"
+        android:icon="@drawable/ic_text_fields_black_24dp"
+        android:title="Text"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+</menu>

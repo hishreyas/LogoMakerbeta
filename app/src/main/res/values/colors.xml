@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    !--
+    Colors
+    !--
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="toolbar_color">#2F8052</color>
+    <color name="itembottomtint">#F0F0F0</color>
+    <color name="itemtextcolor">#F0F0F0</color>
+
+    !--
+    dimen
+    !--
+    <dimen name="toolbar_elevation">20dp</dimen>
+    <dimen name="vertical_spacing">10dp</dimen>
+    <dimen name="horizontal_spacing">10dp</dimen>
+    <dimen name="padding_top">7dp</dimen>
+    <dimen name="padding_bottom">7dp</dimen>
+    <dimen name="padding_left">15dp</dimen>
+    <dimen name="padding_start">15dp</dimen>
+
+</resources>

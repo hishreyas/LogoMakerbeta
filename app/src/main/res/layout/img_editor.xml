@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/edit_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"
+        android:elevation="@dimen/toolbar_elevation">
+
+    <include
+    layout="@layout/menu_edit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_toolbar"
+        android:layout_marginTop="25dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_ad_banner">
+    </com.google.android.gms.ads.AdView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_toolbar"
+        android:padding="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/frame"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true"
+            android:background="#F0F0F0"
+            android:elevation="@dimen/cardview_default_elevation"
+            >
+
+
+            <com.shashi.mysticker.StickerView
+                android:id="@+id/sticker_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:showBorder="true"
+                app:showIcons="true">
+
+
+
+            </com.shashi.mysticker.StickerView>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#2F8052"
+        android:elevation="20dp"
+        app:menu="@menu/endit_menu"
+        app:itemIconTint="@color/itembottomtint"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/itemtextcolor"
+        app:itemTextAppearanceInactive="@style/TextAppearance.AppCompat.Small.Inverse"
+        app:itemTextAppearanceActive="@style/TextAppearance.AppCompat.Small.Inverse"
+        >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>
+</FrameLayout>
